@@ -19,6 +19,8 @@
 
 @implementation CAKeyframeAnimationController
 
+#pragma mark - ViewController Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -41,13 +43,18 @@
     [self.heartImage.layer removeAnimationForKey:@"rotationAnimation"];
 }
 
+#pragma mark - Action
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.heartImage.layer removeAnimationForKey:@"rotationAnimation"];
     
     CAKeyframeAnimation *rotationAnimation = [CAKeyframeAnimation animation];
     rotationAnimation.keyPath = @"transform.rotation";
-    rotationAnimation.values = @[@(AngleToRadius(90)), @(AngleToRadius(180)), @(AngleToRadius(270)), @(AngleToRadius(360))];
+    rotationAnimation.values = @[@(AngleToRadius(90)),
+                                 @(AngleToRadius(180)),
+                                 @(AngleToRadius(270)),
+                                 @(AngleToRadius(360))];
     rotationAnimation.duration = 1.5;
     rotationAnimation.repeatCount = 1;
     [self.heartImage.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];

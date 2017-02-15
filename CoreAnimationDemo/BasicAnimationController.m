@@ -16,6 +16,7 @@
 
 @implementation BasicAnimationController
 
+#pragma mark - ViewController Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,6 +40,7 @@
     [self.heartImage.layer removeAnimationForKey:@"scaleAnimation"];
 }
 
+#pragma mark - Action
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
