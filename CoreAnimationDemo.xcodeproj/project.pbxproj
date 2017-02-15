@@ -13,6 +13,10 @@
 		3988DF821E53F133000B82EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3988DF801E53F133000B82EB /* Main.storyboard */; };
 		3988DF841E53F133000B82EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3988DF831E53F133000B82EB /* Assets.xcassets */; };
 		3988DF871E53F133000B82EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3988DF851E53F133000B82EB /* LaunchScreen.storyboard */; };
+		3988DF901E53F354000B82EB /* BasicAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3988DF8F1E53F354000B82EB /* BasicAnimationController.m */; };
+		3988DF931E53F36E000B82EB /* CAKeyframeAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3988DF921E53F36E000B82EB /* CAKeyframeAnimationController.m */; };
+		3988DF961E53F394000B82EB /* CAAnimationGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3988DF951E53F394000B82EB /* CAAnimationGroupController.m */; };
+		3988DF991E53F3AA000B82EB /* CATransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3988DF981E53F3AA000B82EB /* CATransitionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		3988DF831E53F133000B82EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3988DF861E53F133000B82EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3988DF881E53F133000B82EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3988DF8E1E53F354000B82EB /* BasicAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicAnimationController.h; sourceTree = "<group>"; };
+		3988DF8F1E53F354000B82EB /* BasicAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicAnimationController.m; sourceTree = "<group>"; };
+		3988DF911E53F36E000B82EB /* CAKeyframeAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAKeyframeAnimationController.h; sourceTree = "<group>"; };
+		3988DF921E53F36E000B82EB /* CAKeyframeAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAKeyframeAnimationController.m; sourceTree = "<group>"; };
+		3988DF941E53F394000B82EB /* CAAnimationGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAAnimationGroupController.h; sourceTree = "<group>"; };
+		3988DF951E53F394000B82EB /* CAAnimationGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAAnimationGroupController.m; sourceTree = "<group>"; };
+		3988DF971E53F3AA000B82EB /* CATransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionController.h; sourceTree = "<group>"; };
+		3988DF981E53F3AA000B82EB /* CATransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,14 @@
 				3988DF7B1E53F133000B82EB /* AppDelegate.m */,
 				3988DF7D1E53F133000B82EB /* ViewController.h */,
 				3988DF7E1E53F133000B82EB /* ViewController.m */,
+				3988DF8E1E53F354000B82EB /* BasicAnimationController.h */,
+				3988DF8F1E53F354000B82EB /* BasicAnimationController.m */,
+				3988DF911E53F36E000B82EB /* CAKeyframeAnimationController.h */,
+				3988DF921E53F36E000B82EB /* CAKeyframeAnimationController.m */,
+				3988DF941E53F394000B82EB /* CAAnimationGroupController.h */,
+				3988DF951E53F394000B82EB /* CAAnimationGroupController.m */,
+				3988DF971E53F3AA000B82EB /* CATransitionController.h */,
+				3988DF981E53F3AA000B82EB /* CATransitionController.m */,
 				3988DF801E53F133000B82EB /* Main.storyboard */,
 				3988DF831E53F133000B82EB /* Assets.xcassets */,
 				3988DF851E53F133000B82EB /* LaunchScreen.storyboard */,
@@ -150,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3988DF961E53F394000B82EB /* CAAnimationGroupController.m in Sources */,
+				3988DF931E53F36E000B82EB /* CAKeyframeAnimationController.m in Sources */,
 				3988DF7F1E53F133000B82EB /* ViewController.m in Sources */,
 				3988DF7C1E53F133000B82EB /* AppDelegate.m in Sources */,
 				3988DF791E53F133000B82EB /* main.m in Sources */,
+				3988DF901E53F354000B82EB /* BasicAnimationController.m in Sources */,
+				3988DF991E53F3AA000B82EB /* CATransitionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +333,7 @@
 				3988DF8D1E53F133000B82EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
