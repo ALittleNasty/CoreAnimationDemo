@@ -23,7 +23,7 @@
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-    CGRect frame = CGRectMake((screenWidth - 100) * 0.5, (screenHeight - 100) * 0.5, 100.f, 100.f);
+    CGRect frame = CGRectMake((screenWidth - 200) * 0.5, (screenHeight - 200) * 0.5, 200.f, 200.f);
     
     UIImageView *heartImage = [[UIImageView alloc] init];
     heartImage.image = [UIImage imageNamed:@"heart.jpeg"];
