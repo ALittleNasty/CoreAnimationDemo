@@ -16,11 +16,6 @@
 
 @implementation BasicAnimationController
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [self.heartImage.layer removeAnimationForKey:@"scaleAnimation"];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,6 +32,13 @@
     [self.view addSubview:heartImage];
     self.heartImage = heartImage;
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.heartImage.layer removeAnimationForKey:@"scaleAnimation"];
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
